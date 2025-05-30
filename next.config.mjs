@@ -2,9 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    esmExternals: true,
+  },
   images: {
     domains: ['images.unsplash.com'],
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
